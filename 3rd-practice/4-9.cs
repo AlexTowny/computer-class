@@ -9,15 +9,12 @@ namespace Practice1
 
             Console.Write("Введите число A = ");
             int A = int.Parse(Console.ReadLine());
-            
+            A += 3 - A % 3;
             Console.Write("Введите число B = ");
             int B = int.Parse(Console.ReadLine());
 
-            for (int i = A; i <= B; i++) {
-                if (i % 3 == 0)
-                { 
+            for (int i = A; i <= B; i+=3) {
                     Console.Write("{0}, ", i); 
-                }
             }
             Console.WriteLine();
                        
