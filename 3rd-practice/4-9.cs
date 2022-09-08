@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Practice1
 {
@@ -18,10 +14,14 @@ namespace Practice1
             int B = int.Parse(Console.ReadLine());
 
             for (int i = A; i <= B; i++) {
-                Console.Write("{0}, ", i);
+                if (i % 3 == 0)
+                { 
+                    Console.Write("{0}, ", i); 
+                }
             }
             Console.WriteLine();
                        
         }
     }
+
 }
