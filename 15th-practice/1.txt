@@ -1,0 +1,6 @@
+alex alexus alexas 2001 programmer 20000 10
+coff coffus coffas 2003 cleaner 200 9
+andre andrus andras 2007 barmen 2000 13
+kern kernus kernas 2000 driver 1500 17
+alex coffus coffas 1990 programmer 15000 12
+coff andrus andras 2012 programmer 7000 11
