@@ -20,14 +20,14 @@ using System.Linq;
 
 class HelloWorld {
     
-    struct Employee : IComparable<Employee>{
+    struct Employee {
         string surname;
         string name;
         string father;
         int year;
         string status;
         public int pay;
-        int stage;
+        public int stage;
         
         public Employee(string surname, string name, string father, int year,string status,int pay,int stage){
             this.surname = surname;
@@ -47,18 +47,7 @@ class HelloWorld {
             return buff;
         } 
     
-        public int CompareTo(Employee obj) //проводим переопределением метода
-            { 
-                if(this.stage==obj.stage){
-                    return 0;
-                }
-                else if(this.stage>obj.stage){
-                    return 1;
-                }
-                else{
-                    return -1;
-                }
-            }
+       
     }
     
     static void Main() {
@@ -89,8 +78,9 @@ class HelloWorld {
                 
                 List<Employee> res = new List<Employee> ( from p in empl_list
                           where p.pay < R
+                          orderby p.stage 
                           select p);
-                res.Sort();
+               
                 
                 foreach (var empl in res)
                 {
